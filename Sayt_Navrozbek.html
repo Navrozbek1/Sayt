@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="uz">
 <head>
@@ -974,12 +975,12 @@
         <div class="container">
             <div class="logo" onclick="scrollToSection('home')">Navrozbek.uz</div>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" onclick="scrollToSection('home')" class="nav-link active">Bosh sahifa</a></li>
-                <li><a href="#about" onclick="scrollToSection('about')" class="nav-link">Men haqimda</a></li>
-                <li><a href="#education" onclick="scrollToSection('education')" class="nav-link">Ta'lim</a></li>
-                <li><a href="#projects" onclick="scrollToSection('projects')" class="nav-link">Loyihalar</a></li>
-                <li><a href="#skills" onclick="scrollToSection('skills')" class="nav-link">Ko'nikmalar</a></li>
-                <li><a href="#contact" onclick="scrollToSection('contact')" class="nav-link">Aloqa</a></li>
+                <li><a href="#home" data-i18n="nav.home" onclick="scrollToSection('home')" class="nav-link active">Bosh sahifa</a></li>
+                <li><a href="#about" data-i18n="nav.about" onclick="scrollToSection('about')" class="nav-link">Men haqimda</a></li>
+                <li><a href="#education" data-i18n="nav.education" onclick="scrollToSection('education')" class="nav-link">Ta'lim</a></li>
+                <li><a href="#projects" data-i18n="nav.projects" onclick="scrollToSection('projects')" class="nav-link">Loyihalar</a></li>
+                <li><a href="#skills" data-i18n="nav.skills" onclick="scrollToSection('skills')" class="nav-link">Ko'nikmalar</a></li>
+                <li><a href="#contact" data-i18n="nav.contact" onclick="scrollToSection('contact')" class="nav-link">Aloqa</a></li>
             </ul>
             <div class="nav-controls">
                 <div class="language-switcher">
@@ -1011,10 +1012,10 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Allamov Navrozbek</h1>
-            <div class="subtitle">IT o'quvchisi</div>
-            <div class="role">Python, HTML, CSS</div>
-            <p class="hero-description">Zamonaviy, minimalistik va tezkor veb-sahifalar yaratishni o'rganmoqdaman. Maqsadim — toza kod, foydalanuvchi uchun qulay interfeys va barqaror natija.</p>
+            <h1 data-i18n="hero.name">Allamov Navrozbek</h1>
+            <div class="subtitle" data-i18n="hero.role">IT o'quvchisi</div>
+            <div class="role" data-i18n="hero.subtitle">Python, HTML, CSS</div>
+            <p class="hero-description" data-i18n="hero.description">Zamonaviy, minimalistik va tezkor veb-sahifalar yaratishni o'rganmoqdaman. Maqsadim — toza kod, foydalanuvchi uchun qulay interfeys va barqaror natija.</p>
             
             <div class="stats">
                 <div class="stat-card">
@@ -1032,10 +1033,10 @@
             </div>
 
             <div class="cta-buttons">
-                <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                <button class="btn btn-primary" onclick="scrollToSection('projects')" data-i18n="hero.cta_projects">
                     <i class="fas fa-code"></i> Loyihalarni ko'rish
                 </button>
-                <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                <button class="btn btn-secondary" onclick="scrollToSection('contact')" data-i18n="hero.cta_contact">
                     <i class="fas fa-envelope"></i> Bog'lanish
                 </button>
             </div>
@@ -1059,7 +1060,7 @@
 
     <!-- About Section -->
     <section id="about">
-        <h2 class="section-title">Men <span>haqimda</span></h2>
+        <h2 class="section-title" data-i18n="about.title">Men <span>haqimda</span></h2>
         <div class="about-intro">
             <p>Men Allamov Navrozbekman — IT yo'nalishida tahsil olayotgan o'quvchiman. Python, HTML va CSS asoslarini o'rganib, amaliy loyihalar bilan tajriba to'plamoqdaman.</p>
             <p>Hozirda maktabda o'qib, bir vaqtning o'zida IT kurslarida qatnashib, Politechnik texnikumda ham ta'lim olib kelayotganman. Dasturlash sohasida yangi bilimlar olish va amaliy loyihalar yaratishga qiziqaman.</p>
@@ -1103,7 +1104,7 @@
 
     <!-- Education Section -->
     <section id="education">
-        <h2 class="section-title">Ta'<span>lim</span></h2>
+        <h2 class="section-title" data-i18n="edu.title">Ta'<span>lim</span></h2>
         
         <div class="card" style="margin-bottom: 2rem;">
             <div class="card-header">
@@ -1157,7 +1158,7 @@
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2 class="section-title">Loyi<span>halar</span></h2>
+        <h2 class="section-title" data-i18n="proj.title">Loyi<span>halar</span></h2>
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-image">
@@ -1221,7 +1222,7 @@
 
     <!-- Skills Section -->
     <section id="skills">
-        <h2 class="section-title">Ko'ni<span>kmalar</span></h2>
+        <h2 class="section-title" data-i18n="skills.title">Ko'ni<span>kmalar</span></h2>
         
         <div class="skill-category">
             <h3>Dasturlash tillari</h3>
@@ -1288,7 +1289,7 @@
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2 class="section-title">Alo<span>qa</span></h2>
+        <h2 class="section-title" data-i18n="contact.title">Alo<span>qa</span></h2>
         <div class="contact-container">
             <div>
                 <div class="contact-card">
@@ -1345,12 +1346,12 @@
 
     <footer>
         <div class="footer-links">
-            <a href="#home" onclick="scrollToSection('home')">Bosh sahifa</a>
-            <a href="#about" onclick="scrollToSection('about')">Men haqimda</a>
-            <a href="#education" onclick="scrollToSection('education')">Ta'lim</a>
-            <a href="#projects" onclick="scrollToSection('projects')">Loyihalar</a>
-            <a href="#skills" onclick="scrollToSection('skills')">Ko'nikmalar</a>
-            <a href="#contact" onclick="scrollToSection('contact')">Aloqa</a>
+            <a href="#home" onclick="scrollToSection('home')" data-i18n="nav.home">Bosh sahifa</a>
+            <a href="#about" onclick="scrollToSection('about')" data-i18n="nav.about">Men haqimda</a>
+            <a href="#education" onclick="scrollToSection('education')" data-i18n="nav.education">Ta'lim</a>
+            <a href="#projects" onclick="scrollToSection('projects')" data-i18n="nav.projects">Loyihalar</a>
+            <a href="#skills" onclick="scrollToSection('skills')" data-i18n="nav.skills">Ko'nikmalar</a>
+            <a href="#contact" onclick="scrollToSection('contact')" data-i18n="nav.contact">Aloqa</a>
         </div>
         <p class="footer-copyright">© <span id="year"></span> Navrozbek.uz — Allamov Navrozbek</p>
     </footer>
@@ -1377,15 +1378,13 @@
 
         // Theme toggle
         function toggleTheme() {
-            const body = document.body;
             const icon = document.getElementById('theme-icon');
-            
-            if (body.getAttribute('data-theme') === 'dark') {
-                body.removeAttribute('data-theme');
+            if (document.documentElement.getAttribute('data-theme') === 'dark') {
+                document.documentElement.removeAttribute('data-theme');
                 icon.className = 'fas fa-moon';
                 localStorage.setItem('theme', 'light');
             } else {
-                body.setAttribute('data-theme', 'dark');
+                document.documentElement.setAttribute('data-theme', 'dark');
                 icon.className = 'fas fa-sun';
                 localStorage.setItem('theme', 'dark');
             }
@@ -1395,7 +1394,7 @@
         (function initTheme() {
             const saved = localStorage.getItem('theme');
             if (saved === 'dark') {
-                document.body.setAttribute('data-theme', 'dark');
+                document.documentElement.setAttribute('data-theme', 'dark');
                 document.getElementById('theme-icon').className = 'fas fa-sun';
             }
         })();
@@ -1408,7 +1407,7 @@
         document.addEventListener('click', function(e) {
             const switcher = document.querySelector('.language-switcher');
             const dropdown = document.getElementById('languageDropdown');
-            if (!switcher.contains(e.target)) {
+            if (dropdown && !switcher.contains(e.target)) {
                 dropdown.classList.remove('active');
             }
         });
@@ -1421,7 +1420,9 @@
                     name: 'Allamov Navrozbek',
                     role: 'IT o\'quvchisi',
                     subtitle: 'Python, HTML, CSS',
-                    description: 'Zamonaviy, minimalistik va tezkor veb-sahifalar yaratishni o\'rganmoqdaman. Maqsadim — toza kod, foydalanuvchi uchun qulay interfeys va barqaror natija.'
+                    description: 'Zamonaviy, minimalistik va tezkor veb-sahifalar yaratishni o\'rganmoqdaman. Maqsadim — toza kod, foydalanuvchi uchun qulay interfeys va barqaror natija.',
+                    cta_projects: 'Loyihalarni ko\'rish',
+                    cta_contact: 'Bog\'lanish'
                 }
             },
             en: {
@@ -1430,7 +1431,9 @@
                     name: 'Allamov Navrozbek',
                     role: 'IT Student',
                     subtitle: 'Python, HTML, CSS',
-                    description: 'Learning to build modern, minimalist, and fast web pages. My goal is clean code, user-friendly interface, and reliable results.'
+                    description: 'Learning to build modern, minimalist, and fast web pages. My goal is clean code, user-friendly interface, and reliable results.',
+                    cta_projects: 'View Projects',
+                    cta_contact: 'Contact'
                 }
             },
             ru: {
@@ -1439,7 +1442,9 @@
                     name: 'Аллямов Навруз',
                     role: 'IT студент',
                     subtitle: 'Python, HTML, CSS',
-                    description: 'Изучаю создание современных, минималистичных и быстрых веб-сайтов. Моя цель - чистый код, удобный интерфейс и надежный результат.'
+                    description: 'Изучаю создание современных, минималистичных и быстрых веб-сайтов. Моя цель - чистый код, удобный интерфейс и надежный результат.',
+                    cta_projects: 'Просмотр проектов',
+                    cta_contact: 'Контакты'
                 }
             }
         };
@@ -1451,11 +1456,16 @@
             localStorage.setItem('language', lang);
             document.documentElement.lang = lang;
             document.getElementById('current-lang').textContent = lang.toUpperCase();
-            
             document.querySelectorAll('.language-option').forEach(opt => opt.classList.remove('active'));
             document.querySelector(`[data-lang="${lang}"]`).classList.add('active');
-            
             document.getElementById('languageDropdown').classList.remove('active');
+            // YANGI: Barcha matnlarni dinamik o'zgartirish
+            const dict = translations[lang] || translations.uz;
+            document.querySelectorAll('[data-i18n]').forEach(function(el) {
+                const key = el.getAttribute('data-i18n');
+                const value = key.split('.').reduce((a, k) => a && a[k], dict);
+                if (typeof value === 'string') el.textContent = value;
+            });
         }
 
         function updateActiveLink() {
@@ -1514,12 +1524,18 @@
             event.target.reset();
         }
 
+        // Birlashtirilgan document click event (nav va til uchun bitta joyda)
         document.addEventListener('click', function(e) {
+            // Til dropdown yopiladi
+            const switcher = document.querySelector('.language-switcher');
+            const dropdown = document.getElementById('languageDropdown');
+            if (dropdown && !switcher.contains(e.target)) {
+                dropdown.classList.remove('active');
+            }
+            // Mobil nav menyu drop yopiladi
             const navMenu = document.getElementById('navMenu');
-            const mobileBtn = document.querySelector('.mobile-menu-btn');
-            const nav = document.querySelector('nav');
-            
-            if (!nav.contains(e.target)) {
+            const nav = document.getElementById('navbar');
+            if (navMenu && nav && !nav.contains(e.target)) {
                 navMenu.classList.remove('active');
             }
         });
